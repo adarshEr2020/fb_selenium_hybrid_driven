@@ -2,15 +2,19 @@ package com.fb.qa.tastcases;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.fb.qa.base.BaseClass;
+import com.fb.qa.pages.HomePage;
 import com.fb.qa.pages.LoginPage;
 import com.fb.qa.util.GetTestData;
 
+@Listeners(com.fb.qa.listener.ListnerTest.class)
 public class LoginPageTest extends BaseClass {
 	LoginPage loginPage;
-	GetTestData getTest;
+	HomePage homePage;
+//	GetTestData getTest;
 	public static String sheetname = "user_data";
 
 	public LoginPageTest() {
@@ -21,12 +25,12 @@ public class LoginPageTest extends BaseClass {
 	public void setup() {
 		initiazations();
 		loginPage = new LoginPage();
-		getTest = new GetTestData();
+//		getTest = new GetTestData();
 	}
 
 	@DataProvider
 	public Object[][] getLoginTestData() {
-		Object data[][] = getTest.getTestData(sheetname);
+		Object data[][] = GetTestData.getTestData(sheetname);
 		return data;
 	}
 
@@ -37,7 +41,8 @@ public class LoginPageTest extends BaseClass {
 
 	@Test
 	public void loginTest() throws InterruptedException {
-		loginPage.login(prop.getProperty("email"), prop.getProperty("password"));
+	homePage =  loginPage.login(prop.getProperty("email"), prop.getProperty("password"));
+	System.out.println(homePage);
 //		driver.close();
 	}
 

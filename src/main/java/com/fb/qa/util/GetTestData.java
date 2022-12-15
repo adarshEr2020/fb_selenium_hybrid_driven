@@ -16,7 +16,7 @@ public class GetTestData {
 	public static Workbook book;
 	public static Sheet sheet;
 
-	public Object[][] getTestData(String sheetName) {
+	public static  Object[][] getTestData(String sheetName) {
 		FileInputStream file = null;
 		try {
 			file = new FileInputStream(TEST_SHEET_PATH);
@@ -33,7 +33,7 @@ public class GetTestData {
 		for (int i = 0; i < sheet.getLastRowNum(); i++) {
 			for (int k = 0; k < sheet.getRow(0).getLastCellNum(); k++) {
 				data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
-			} 
+			}
 		}
 		return data;
 	}
