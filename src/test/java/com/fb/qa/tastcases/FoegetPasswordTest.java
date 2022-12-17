@@ -1,12 +1,14 @@
 package com.fb.qa.tastcases;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.fb.qa.base.BaseClass;
 import com.fb.qa.pages.LoginPage;
 import com.fb.qa.pages.ForgetPassword;
 
+@Listeners(com.fb.qa.listener.ListnerTest.class)
 public class FoegetPasswordTest extends BaseClass {
 	LoginPage loginPage;
 	ForgetPassword forgetPass;
@@ -26,21 +28,21 @@ public class FoegetPasswordTest extends BaseClass {
 	@Test
 	public void login() throws InterruptedException {
 		forgetPass.loginFromForgtPage(prop.getProperty("email"), prop.getProperty("password"));
-		driver.close();
+//		driver.close();
 	}
 
 	
 	@Test
 	public void forgetFbAccount() throws InterruptedException {
 		forgetPass.switchToForgetAcc();
-		driver.close();
+//		driver.close();
 	}
 	
 	@Test
 	public void forgetPassTest() throws InterruptedException {
 		forgetPass.forgetPassword(prop.getProperty("email"));
 		Thread.sleep(3000);
-		driver.close();
+//		driver.close();
 	}
 
 

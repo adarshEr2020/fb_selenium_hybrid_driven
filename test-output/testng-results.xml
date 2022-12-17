@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="6" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-15T22:51:40 IST" name="Default suite" finished-at="2022-12-15T22:52:13 IST" duration-ms="33167">
+  <suite started-at="2022-12-17T11:45:00 IST" name="Suite" finished-at="2022-12-17T11:48:29 IST" duration-ms="209034">
     <groups>
     </groups>
-    <test started-at="2022-12-15T22:51:40 IST" name="Default test" finished-at="2022-12-15T22:52:13 IST" duration-ms="33167">
+    <test started-at="2022-12-17T11:45:00 IST" name="Test" finished-at="2022-12-17T11:48:29 IST" duration-ms="209034">
       <class name="com.fb.qa.tastcases.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.fb.qa.tastcases.LoginPageTest@1afd44cb]" started-at="2022-12-15T22:51:41 IST" name="setup" finished-at="2022-12-15T22:51:44 IST" duration-ms="3656" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.fb.qa.tastcases.LoginPageTest@120f102b]" started-at="2022-12-17T11:45:06 IST" name="setup" finished-at="2022-12-17T11:45:10 IST" duration-ms="3332" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="multipleLoign(java.lang.String,java.lang.String)[pri:0, instance:com.fb.qa.tastcases.LoginPageTest@1afd44cb]" started-at="2022-12-15T22:51:44 IST" name="multipleLoign" data-provider="getLoginTestData" finished-at="2022-12-15T22:51:50 IST" duration-ms="5250" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.fb.qa.tastcases.LoginPageTest@120f102b]" started-at="2022-12-17T11:45:10 IST" name="loginTest" finished-at="2022-12-17T11:45:20 IST" duration-ms="10239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.fb.qa.tastcases.LoginPageTest@120f102b]" started-at="2022-12-17T11:45:22 IST" name="setup" finished-at="2022-12-17T11:45:25 IST" duration-ms="3090" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="multipleLoign(java.lang.String,java.lang.String)[pri:0, instance:com.fb.qa.tastcases.LoginPageTest@120f102b]" started-at="2022-12-17T11:45:25 IST" name="multipleLoign" data-provider="getLoginTestData" finished-at="2022-12-17T11:45:30 IST" duration-ms="5177" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,11 +35,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multipleLoign -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.fb.qa.tastcases.LoginPageTest@1afd44cb]" started-at="2022-12-15T22:51:51 IST" name="setup" finished-at="2022-12-15T22:51:54 IST" duration-ms="2491" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.fb.qa.tastcases.LoginPageTest@120f102b]" started-at="2022-12-17T11:45:32 IST" name="setup" finished-at="2022-12-17T11:45:35 IST" duration-ms="3095" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="multipleLoign(java.lang.String,java.lang.String)[pri:0, instance:com.fb.qa.tastcases.LoginPageTest@1afd44cb]" started-at="2022-12-15T22:51:54 IST" name="multipleLoign" data-provider="getLoginTestData" finished-at="2022-12-15T22:51:59 IST" duration-ms="5276" status="PASS">
+        <test-method signature="multipleLoign(java.lang.String,java.lang.String)[pri:0, instance:com.fb.qa.tastcases.LoginPageTest@120f102b]" started-at="2022-12-17T11:45:35 IST" name="multipleLoign" data-provider="getLoginTestData" finished-at="2022-12-17T11:45:41 IST" duration-ms="5239" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -47,7 +55,117 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multipleLoign -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.fb.qa.tastcases.LoginPageTest@120f102b]" started-at="2022-12-17T11:46:04 IST" name="setup" finished-at="2022-12-17T11:46:08 IST" duration-ms="4176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="switchToCreateAcc()[pri:0, instance:com.fb.qa.tastcases.LoginPageTest@120f102b]" started-at="2022-12-17T11:46:08 IST" name="switchToCreateAcc" finished-at="2022-12-17T11:46:08 IST" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- switchToCreateAcc -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.fb.qa.tastcases.LoginPageTest@120f102b]" started-at="2022-12-17T11:46:09 IST" name="setup" finished-at="2022-12-17T11:46:13 IST" duration-ms="4627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="switchToCreateFbPage()[pri:0, instance:com.fb.qa.tastcases.LoginPageTest@120f102b]" started-at="2022-12-17T11:46:13 IST" name="switchToCreateFbPage" finished-at="2022-12-17T11:46:17 IST" duration-ms="3970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- switchToCreateFbPage -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.fb.qa.tastcases.LoginPageTest@120f102b]" started-at="2022-12-17T11:46:17 IST" name="setup" finished-at="2022-12-17T11:46:21 IST" duration-ms="3553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="switchToForgetPass()[pri:0, instance:com.fb.qa.tastcases.LoginPageTest@120f102b]" started-at="2022-12-17T11:46:21 IST" name="switchToForgetPass" finished-at="2022-12-17T11:46:27 IST" duration-ms="6012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- switchToForgetPass -->
       </class> <!-- com.fb.qa.tastcases.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.fb.qa.tastcases.FoegetPasswordTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.fb.qa.tastcases.FoegetPasswordTest@51dcb805]" started-at="2022-12-17T11:47:45 IST" name="setup" finished-at="2022-12-17T11:47:52 IST" duration-ms="7440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="forgetFbAccount()[pri:0, instance:com.fb.qa.tastcases.FoegetPasswordTest@51dcb805]" started-at="2022-12-17T11:47:52 IST" name="forgetFbAccount" finished-at="2022-12-17T11:47:55 IST" duration-ms="3138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgetFbAccount -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.fb.qa.tastcases.FoegetPasswordTest@51dcb805]" started-at="2022-12-17T11:47:56 IST" name="setup" finished-at="2022-12-17T11:48:04 IST" duration-ms="8753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="forgetPassTest()[pri:0, instance:com.fb.qa.tastcases.FoegetPasswordTest@51dcb805]" started-at="2022-12-17T11:48:04 IST" name="forgetPassTest" finished-at="2022-12-17T11:48:10 IST" duration-ms="6134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgetPassTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.fb.qa.tastcases.FoegetPasswordTest@51dcb805]" started-at="2022-12-17T11:48:11 IST" name="setup" finished-at="2022-12-17T11:48:21 IST" duration-ms="10565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:0, instance:com.fb.qa.tastcases.FoegetPasswordTest@51dcb805]" started-at="2022-12-17T11:48:21 IST" name="login" finished-at="2022-12-17T11:48:29 IST" duration-ms="7844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- com.fb.qa.tastcases.FoegetPasswordTest -->
+      <class name="com.fb.qa.tastcases.SignUpPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.fb.qa.tastcases.SignUpPageTest@4cc8eb05]" started-at="2022-12-17T11:45:00 IST" name="setup" finished-at="2022-12-17T11:45:04 IST" duration-ms="3564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="signUp()[pri:0, instance:com.fb.qa.tastcases.SignUpPageTest@4cc8eb05]" started-at="2022-12-17T11:45:04 IST" name="signUp" finished-at="2022-12-17T11:45:06 IST" duration-ms="1869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+      </class> <!-- com.fb.qa.tastcases.SignUpPageTest -->
+      <class name="com.fb.qa.tastcases.CreateFbPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.fb.qa.tastcases.CreateFbPageTest@625732]" started-at="2022-12-17T11:46:27 IST" name="setup" finished-at="2022-12-17T11:46:37 IST" duration-ms="10149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="forgetAcc()[pri:0, instance:com.fb.qa.tastcases.CreateFbPageTest@625732]" started-at="2022-12-17T11:46:37 IST" name="forgetAcc" finished-at="2022-12-17T11:46:45 IST" duration-ms="8065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgetAcc -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.fb.qa.tastcases.CreateFbPageTest@625732]" started-at="2022-12-17T11:46:45 IST" name="setup" finished-at="2022-12-17T11:46:55 IST" duration-ms="9732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginFromCreateFbpage()[pri:0, instance:com.fb.qa.tastcases.CreateFbPageTest@625732]" started-at="2022-12-17T11:46:55 IST" name="loginFromCreateFbpage" finished-at="2022-12-17T11:47:01 IST" duration-ms="6220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFromCreateFbpage -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.fb.qa.tastcases.CreateFbPageTest@625732]" started-at="2022-12-17T11:47:07 IST" name="setup" finished-at="2022-12-17T11:47:13 IST" duration-ms="6482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="switchSignUpPageFromNavbar()[pri:0, instance:com.fb.qa.tastcases.CreateFbPageTest@625732]" started-at="2022-12-17T11:47:13 IST" name="switchSignUpPageFromNavbar" finished-at="2022-12-17T11:47:15 IST" duration-ms="1245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- switchSignUpPageFromNavbar -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.fb.qa.tastcases.CreateFbPageTest@625732]" started-at="2022-12-17T11:47:15 IST" name="setup" finished-at="2022-12-17T11:47:22 IST" duration-ms="7113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="switchToCreateBusiORBrandFBPage()[pri:0, instance:com.fb.qa.tastcases.CreateFbPageTest@625732]" started-at="2022-12-17T11:47:22 IST" name="switchToCreateBusiORBrandFBPage" finished-at="2022-12-17T11:47:26 IST" duration-ms="3857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- switchToCreateBusiORBrandFBPage -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.fb.qa.tastcases.CreateFbPageTest@625732]" started-at="2022-12-17T11:47:26 IST" name="setup" finished-at="2022-12-17T11:47:31 IST" duration-ms="5264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="switchToCreateCommuORPFigureFBPage()[pri:0, instance:com.fb.qa.tastcases.CreateFbPageTest@625732]" started-at="2022-12-17T11:47:31 IST" name="switchToCreateCommuORPFigureFBPage" finished-at="2022-12-17T11:47:35 IST" duration-ms="3861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- switchToCreateCommuORPFigureFBPage -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.fb.qa.tastcases.CreateFbPageTest@625732]" started-at="2022-12-17T11:47:35 IST" name="setup" finished-at="2022-12-17T11:47:43 IST" duration-ms="7233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="switchToSignUpPageFromLoginPop()[pri:0, instance:com.fb.qa.tastcases.CreateFbPageTest@625732]" started-at="2022-12-17T11:47:43 IST" name="switchToSignUpPageFromLoginPop" finished-at="2022-12-17T11:47:45 IST" duration-ms="2027" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- switchToSignUpPageFromLoginPop -->
+      </class> <!-- com.fb.qa.tastcases.CreateFbPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

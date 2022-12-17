@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.fb.qa.tastcases.HomePageTest">
+      <class name="com.fb.qa.tastcases.SignUpPageTest">
         <methods>
-          <include name="friendPageTest"/>
+          <include name="signUp"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.fb.qa.tastcases.HomePageTest -->
+      </class> <!-- com.fb.qa.tastcases.SignUpPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

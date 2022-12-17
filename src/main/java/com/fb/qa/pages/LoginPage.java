@@ -53,6 +53,7 @@ public class LoginPage extends BaseClass {
 		login.click();
 	}
 	public void switchToCreateAcc() {
+		Log.info("swithing to create fb account...");
 		createNewAcc.click();
 	}
 

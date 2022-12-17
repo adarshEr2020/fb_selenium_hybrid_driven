@@ -8,16 +8,26 @@ import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.io.FileHandler;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
 public class BaseClass {
+	public static Logger Log = Logger.getLogger(BaseClass.class);
 	public static WebDriver driver;
 	public static Properties prop;
 	public static FileInputStream ip;
+
+	public ExtentReports extent = new ExtentReports();
+	public ExtentSparkReporter spark = new ExtentSparkReporter("test-output/test-reports/ExtentReport.html");
+	ExtentTest test;
 
 	public BaseClass() {
 		prop = new Properties();
@@ -33,6 +43,7 @@ public class BaseClass {
 	}
 
 	public void initiazations() {
+		Log.info("Starting the server...");
 		System.setProperty("webdriver.chrome.driver",
 				"E:\\All software for development\\softwares\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver();
@@ -44,12 +55,13 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
 
-	public void takeScreenShot() {
+	public void takeScreenShot(String name) {
+		Log.info("Taking screenshot of " + name);
 		TakesScreenshot tksht = (TakesScreenshot) driver;
 		Date date = new Date();
 		String currentDate = date.toString().replaceAll(":", "_");
 		File file = tksht.getScreenshotAs(OutputType.FILE);
-		File filesave = new File(".//fb_screenshot//"+ currentDate + "ScreenShot.png");
+		File filesave = new File(".//fb_screenshot//" + currentDate + " " + name + ".png");
 		try {
 			FileHandler.copy(file, filesave);
 		} catch (IOException e) {

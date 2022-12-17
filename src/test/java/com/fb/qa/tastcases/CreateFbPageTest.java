@@ -1,6 +1,7 @@
 package com.fb.qa.tastcases;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.fb.qa.base.BaseClass;
@@ -9,6 +10,7 @@ import com.fb.qa.pages.CreateFbPage;
 //import com.fb.qa.pages.SignUpPage;
 import com.fb.qa.pages.ForgetPassword;
 
+@Listeners(com.fb.qa.listener.ListnerTest.class)
 public class CreateFbPageTest extends BaseClass {
 	LoginPage loginPage;
 	CreateFbPage createPage;
