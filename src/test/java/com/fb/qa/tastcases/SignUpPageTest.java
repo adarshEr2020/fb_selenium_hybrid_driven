@@ -8,6 +8,12 @@ import com.fb.qa.base.BaseClass;
 import com.fb.qa.pages.LoginPage;
 import com.fb.qa.pages.SignUpPage;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+
 @Listeners(com.fb.qa.listener.ListnerTest.class)
 public class SignUpPageTest extends BaseClass {
 	LoginPage loginPage;
@@ -25,6 +31,10 @@ public class SignUpPageTest extends BaseClass {
 	}
 
 	@Test
+	@Description("fb user signup test...")
+	@Severity(SeverityLevel.CRITICAL)
+	@Feature("Signup : 1")
+	@Story("The fb user signup with the some details... ")
 	public void signUp() {
 		loginPage.switchToCreateAcc();
 		signUpPage.fbSignup(prop.getProperty("firstname"), prop.getProperty("lastname"), prop.getProperty("useremail"),

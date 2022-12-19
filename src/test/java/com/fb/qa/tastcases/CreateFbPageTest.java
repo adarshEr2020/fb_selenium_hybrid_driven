@@ -6,6 +6,13 @@ import org.testng.annotations.Test;
 
 import com.fb.qa.base.BaseClass;
 import com.fb.qa.pages.LoginPage;
+
+import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+
 import com.fb.qa.pages.CreateFbPage;
 //import com.fb.qa.pages.SignUpPage;
 import com.fb.qa.pages.ForgetPassword;
@@ -32,6 +39,10 @@ public class CreateFbPageTest extends BaseClass {
 	}
 
 	@Test
+	@Description("Signpage from fb page...")
+	@Severity(SeverityLevel.CRITICAL)
+	@Feature("Signup : 1")
+	@Story("The fb user signup with the some details... ")
 	public void switchSignUpPageFromNavbar() throws InterruptedException {
 		createPage.gotoSignUpFromNavELe();
 //		Thread.sleep(3000);
@@ -41,11 +52,21 @@ public class CreateFbPageTest extends BaseClass {
 	}
 
 	@Test
+	@Description("create Business OR brand FB page")
+	@Severity(SeverityLevel.NORMAL)
+	@Feature("create  fb  page : 2")
+	@Story("switching to create Business OR brand FB page... ")
+	
 	public void switchToCreateBusiORBrandFBPage() throws InterruptedException {
 		createPage.gotoCreateBusiORBrandFBPage();
 	}
 
 	@Test
+	@Description("create community OR figure FB page")
+	@Severity(SeverityLevel.CRITICAL)
+	@Feature("create  fb  page : 2")
+	@Story("switching to create community OR figure FB page... ")
+	
 	public void switchToCreateCommuORPFigureFBPage() throws InterruptedException {
 		createPage.gotoCreateCommuORPFigureFBPage();
 	}
