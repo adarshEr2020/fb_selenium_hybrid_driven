@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">17 methods, 1 failed,   16 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.fb.qa.tastcases.HomePageTest" class="method navigator-link" hash-for-method="friendPageTest">friendPageTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">17 methods,   17 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -133,6 +119,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.fb.qa.tastcases.HomePageTest" class="method navigator-link" hash-for-method="friendPageTest">friendPageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.fb.qa.tastcases.FoegetPasswordTest" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -148,12 +139,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.fb.qa.tastcases.LoginPageTest" class="method navigator-link" hash-for-method="multipleLoign(xyz@gmail.com, ab@1234)">multipleLoign(xyz@gmail.com, ab@1234)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.fb.qa.tastcases.LoginPageTest" class="method navigator-link" hash-for-method="multipleLoign(abc@gmail.com, ab@1234)">multipleLoign(abc@gmail.com, ab@1234)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.fb.qa.tastcases.LoginPageTest" class="method navigator-link" hash-for-method="multipleLoign(abc@gmail.com, ab@1234)">multipleLoign(abc@gmail.com, ab@1234)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.fb.qa.tastcases.LoginPageTest" class="method navigator-link" hash-for-method="multipleLoign(xyz@gmail.com, ab@1234)">multipleLoign(xyz@gmail.com, ab@1234)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -208,49 +199,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.fb.qa.tastcases.HomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="friendPageTest">
-                  </a> <!-- friendPageTest -->
-                  <span class="method-name">friendPageTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Friends&apos;]&quot;}
-  (Session info: chrome=108.0.5359.125)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.5.0&apos;, revision: &apos;fe167b119a&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b4065d0fd2a332c9269de52630b1f908, findElement {using=xpath, value=//span[text()=&apos;Friends&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\welcome\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59077}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59077/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b4065d0fd2a332c9269de52630b1f908
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.fb.qa.pages.HomePage.switchToFriedPage(HomePage.java:17)
-	at com.fb.qa.tastcases.HomePageTest.friendPageTest(HomePageTest.java:44)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -266,18 +214,18 @@ Session ID: b4065d0fd2a332c9269de52630b1f908
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="multipleLoign(xyz@gmail.com, ab@1234)">
-                  </a> <!-- multipleLoign(xyz@gmail.com, ab@1234) -->
-                  <span class="method-name">multipleLoign</span>
-                  <span class="parameters">(xyz@gmail.com, ab@1234)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="multipleLoign(abc@gmail.com, ab@1234)">
                   </a> <!-- multipleLoign(abc@gmail.com, ab@1234) -->
                   <span class="method-name">multipleLoign</span>
                   <span class="parameters">(abc@gmail.com, ab@1234)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="multipleLoign(xyz@gmail.com, ab@1234)">
+                  </a> <!-- multipleLoign(xyz@gmail.com, ab@1234) -->
+                  <span class="method-name">multipleLoign</span>
+                  <span class="parameters">(xyz@gmail.com, ab@1234)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -385,6 +333,21 @@ Session ID: b4065d0fd2a332c9269de52630b1f908
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.fb.qa.tastcases.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="friendPageTest">
+                  </a> <!-- friendPageTest -->
+                  <span class="method-name">friendPageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.fb.qa.tastcases.SignUpPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -460,71 +423,71 @@ data.addRows(17);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'friendPageTest')
 data.setCell(0, 2, 'com.fb.qa.tastcases.HomePageTest')
-data.setCell(0, 3, 23164);
+data.setCell(0, 3, 11031);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginTest')
 data.setCell(1, 2, 'com.fb.qa.tastcases.LoginPageTest')
-data.setCell(1, 3, 10285);
+data.setCell(1, 3, 10284);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'login')
 data.setCell(2, 2, 'com.fb.qa.tastcases.FoegetPasswordTest')
-data.setCell(2, 3, 7194);
+data.setCell(2, 3, 7029);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginFromCreateFbpage')
 data.setCell(3, 2, 'com.fb.qa.tastcases.CreateFbPageTest')
-data.setCell(3, 3, 6234);
+data.setCell(3, 3, 6197);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'forgetPassTest')
 data.setCell(4, 2, 'com.fb.qa.tastcases.FoegetPasswordTest')
-data.setCell(4, 3, 6167);
+data.setCell(4, 3, 6173);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'multipleLoign')
 data.setCell(5, 2, 'com.fb.qa.tastcases.LoginPageTest')
-data.setCell(5, 3, 5246);
+data.setCell(5, 3, 5272);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'multipleLoign')
 data.setCell(6, 2, 'com.fb.qa.tastcases.LoginPageTest')
-data.setCell(6, 3, 5243);
+data.setCell(6, 3, 5222);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'switchToForgetPass')
 data.setCell(7, 2, 'com.fb.qa.tastcases.LoginPageTest')
-data.setCell(7, 3, 4988);
+data.setCell(7, 3, 4725);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'forgetAcc')
 data.setCell(8, 2, 'com.fb.qa.tastcases.CreateFbPageTest')
-data.setCell(8, 3, 4623);
+data.setCell(8, 3, 4375);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'switchToCreateBusiORBrandFBPage')
+data.setCell(9, 1, 'switchToCreateCommuORPFigureFBPage')
 data.setCell(9, 2, 'com.fb.qa.tastcases.CreateFbPageTest')
-data.setCell(9, 3, 4010);
+data.setCell(9, 3, 3858);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'switchToCreateCommuORPFigureFBPage')
+data.setCell(10, 1, 'switchToCreateBusiORBrandFBPage')
 data.setCell(10, 2, 'com.fb.qa.tastcases.CreateFbPageTest')
-data.setCell(10, 3, 3772);
+data.setCell(10, 3, 3791);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'switchToCreateFbPage')
-data.setCell(11, 2, 'com.fb.qa.tastcases.LoginPageTest')
-data.setCell(11, 3, 3424);
+data.setCell(11, 1, 'forgetFbAccount')
+data.setCell(11, 2, 'com.fb.qa.tastcases.FoegetPasswordTest')
+data.setCell(11, 3, 3154);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'forgetFbAccount')
-data.setCell(12, 2, 'com.fb.qa.tastcases.FoegetPasswordTest')
-data.setCell(12, 3, 3144);
+data.setCell(12, 1, 'switchSignUpPageFromNavbar')
+data.setCell(12, 2, 'com.fb.qa.tastcases.CreateFbPageTest')
+data.setCell(12, 3, 3082);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'signUp')
-data.setCell(13, 2, 'com.fb.qa.tastcases.SignUpPageTest')
-data.setCell(13, 3, 1692);
+data.setCell(13, 1, 'switchToCreateFbPage')
+data.setCell(13, 2, 'com.fb.qa.tastcases.LoginPageTest')
+data.setCell(13, 3, 2673);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'switchToSignUpPageFromLoginPop')
-data.setCell(14, 2, 'com.fb.qa.tastcases.CreateFbPageTest')
-data.setCell(14, 3, 1411);
+data.setCell(14, 1, 'signUp')
+data.setCell(14, 2, 'com.fb.qa.tastcases.SignUpPageTest')
+data.setCell(14, 3, 1643);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'switchSignUpPageFromNavbar')
+data.setCell(15, 1, 'switchToSignUpPageFromLoginPop')
 data.setCell(15, 2, 'com.fb.qa.tastcases.CreateFbPageTest')
-data.setCell(15, 3, 1318);
+data.setCell(15, 3, 1223);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'switchToCreateAcc')
 data.setCell(16, 2, 'com.fb.qa.tastcases.LoginPageTest')
-data.setCell(16, 3, 70);
+data.setCell(16, 3, 66);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -562,149 +525,147 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signUp</span>
-                <span class="method-start">3602 ms</span>
+                <span class="method-start">4692 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.fb.qa.tastcases.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">5831 ms</span>
+                <span class="method-start">6830 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">8460 ms</span>
+                <span class="method-start">9281 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">21060 ms</span>
+                <span class="method-start">22040 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">multipleLoign(abc@gmail.com, ab@1234)</span>
-                <span class="method-start">24018 ms</span>
+                <span class="method-start">24635 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">30461 ms</span>
+                <span class="method-start">30834 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">multipleLoign(xyz@gmail.com, ab@1234)</span>
-                <span class="method-start">33612 ms</span>
+                <span class="method-start">33378 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">57370 ms</span>
+                <span class="method-start">55594 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">switchToCreateAcc</span>
-                <span class="method-start">60501 ms</span>
+                <span class="method-start">60227 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">60786 ms</span>
+                <span class="method-start">60502 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">switchToCreateFbPage</span>
-                <span class="method-start">63814 ms</span>
+                <span class="method-start">63234 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">67432 ms</span>
+                <span class="method-start">66140 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">switchToForgetPass</span>
-                <span class="method-start">70359 ms</span>
+                <span class="method-start">69008 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.fb.qa.tastcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">75517 ms</span>
+                <span class="method-start">73897 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">friendPageTest</span>
-                <span class="method-start">86859 ms</span>
+                <span class="method-start">76577 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.fb.qa.tastcases.CreateFbPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">110662 ms</span>
+                <span class="method-start">87943 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">forgetAcc</span>
-                <span class="method-start">116253 ms</span>
+                <span class="method-start">94421 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">121043 ms</span>
+                <span class="method-start">98980 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginFromCreateFbpage</span>
-                <span class="method-start">127101 ms</span>
+                <span class="method-start">104059 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">150609 ms</span>
+                <span class="method-start">116284 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">switchSignUpPageFromNavbar</span>
-                <span class="method-start">157162 ms</span>
+                <span class="method-start">129736 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">158654 ms</span>
+                <span class="method-start">132971 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">switchToCreateBusiORBrandFBPage</span>
-                <span class="method-start">164364 ms</span>
+                <span class="method-start">137516 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">168529 ms</span>
+                <span class="method-start">141475 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">switchToCreateCommuORPFigureFBPage</span>
-                <span class="method-start">174374 ms</span>
+                <span class="method-start">145998 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">178312 ms</span>
+                <span class="method-start">150029 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">switchToSignUpPageFromLoginPop</span>
-                <span class="method-start">185256 ms</span>
+                <span class="method-start">154795 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.fb.qa.tastcases.FoegetPasswordTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">186875 ms</span>
+                <span class="method-start">156178 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">forgetFbAccount</span>
-                <span class="method-start">194647 ms</span>
+                <span class="method-start">164081 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">198010 ms</span>
+                <span class="method-start">167436 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">forgetPassTest</span>
-                <span class="method-start">205941 ms</span>
+                <span class="method-start">175031 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">212344 ms</span>
+                <span class="method-start">181541 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">219916 ms</span>
+                <span class="method-start">189563 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

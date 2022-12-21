@@ -55,17 +55,15 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
 
-	public void takeScreenShot(String name) {
-		Log.info("Taking screenshot of " + name);
-		TakesScreenshot tksht = (TakesScreenshot) driver;
-		Date date = new Date();
-		String currentDate = date.toString().replaceAll(":", "_");
-		File file = tksht.getScreenshotAs(OutputType.FILE);
-		File filesave = new File(".//fb_screenshot//" + currentDate + " " + name + ".png");
+	public String takeScreenShot(WebDriver driver) {
+		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); 
+		File desFile = new File(".//fb_screenshot// "+System.currentTimeMillis()+".png");
+		String abosolutePath  =  desFile.getAbsolutePath();
 		try {
-			FileHandler.copy(file, filesave);
+			FileHandler.copy(srcFile, desFile);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		return abosolutePath;
 	}
 }

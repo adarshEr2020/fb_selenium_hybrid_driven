@@ -22,6 +22,7 @@ public class ListnerTest extends BaseClass implements ITestListener {
 		name = result.getMethod().getMethodName();
 		ExtentTest test = extent.createTest(result.getMethod().getMethodName()).assignAuthor("Adarsh prajapati");
 		test.pass("Test method pass...");
+		test.addScreenCaptureFromPath(takeScreenShot(driver));
 		extent.flush();
 	}
 
@@ -30,7 +31,7 @@ public class ListnerTest extends BaseClass implements ITestListener {
 		name = result.getMethod().getMethodName();
 		ExtentTest test = extent.createTest(result.getMethod().getMethodName()).assignAuthor("Adarsh prajapati");
 		test.fail("Test method failed...");
-		takeScreenShot(name);
+		test.addScreenCaptureFromPath(takeScreenShot(driver));
 		extent.flush();
 	}
 

@@ -6,6 +6,12 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.fb.qa.tastcases.SignUpPageTest">
+        <methods>
+          <include name="signUp"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.fb.qa.tastcases.SignUpPageTest -->
       <class name="com.fb.qa.tastcases.HomePageTest">
         <methods>
           <include name="friendPageTest"/>
